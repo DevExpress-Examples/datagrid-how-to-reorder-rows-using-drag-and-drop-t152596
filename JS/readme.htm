@@ -1,0 +1,38 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>How to reorder dxDataGrid rows using drag-and-drop - Developer Express Example</title>
+<style>
+html, body, form 
+{
+	font-family: Tahoma, Arial, Verdana;
+    font-size: small;
+    color: #303440;
+}
+h1 {
+	font-size: 125%;
+	font-weight: normal;
+	color: Black;
+	letter-spacing: 101%;
+}
+</style>
+</head>
+<body>
+<h1>Developer Express Example<br />How to reorder dxDataGrid rows using drag-and-drop</h1>
+<p>This example demonstrates how to move dxDataGrid (http://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxDataGrid/?version=14_1) rows using Draggable (http://jqueryui.com/draggable/) and Droppable (http://jqueryui.com/droppable/) plug-ins of the jQueryUI library. 
+
+To accomplish this task, we need to perform the following steps:
+
+1. Set a fake CSS class ("myRow") to a data row. This will help us find all data rows using a jQuery selector and assign Draggable and Droppable plug-ins to the rows. Assign the key value of each row to a row element. We need to use the dxDataGrid.rowPrepared (http://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/?version=14_1#rowPrepared) callback function for this step.
+2. When the drop (http://api.jqueryui.com/droppable/#event-drop) event fires, we need to get indexes of the dropped and the target rows, recalculate indexes according our requirements and save them to a data store.
+3. Reload data by calling the dxDataGrid.refresh (http://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/?version=14_1#refresh) method.
+
+See also:
+ArrayStore.load (http://js.devexpress.com/Documentation/ApiReference/Data_Library/ArrayStore/Methods/?version=14_1#loadoptions) 
+ArrayStore.byKey (http://js.devexpress.com/Documentation/ApiReference/Data_Library/ArrayStore/Methods/?version=14_1#byKeykey_extraOptions) 
+ArrayStore.update (http://js.devexpress.com/Documentation/ApiReference/Data_Library/ArrayStore/Methods/?version=14_1#updatekey_values) 
+.data() (http://api.jquery.com/data/)</p>
+<p>You can find sample updates and versions for different programming languages here:<br /><a href="http://www.devexpress.com/example=T152596">http://www.devexpress.com/example=T152596</a>.</p>
+</body>
+</html>
