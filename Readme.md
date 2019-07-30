@@ -4,7 +4,7 @@
 <!-- default file list end -->
 # DataGrid  - How to reorder rows using drag-and-drop
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t152596)**
+**[[Run Online]](https://codecentral.devexpress.com/t152596/)**
 <!-- run online end -->
 
 
